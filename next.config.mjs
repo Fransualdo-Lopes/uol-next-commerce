@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['fakestoreapi.com']
+        domains: ['files.stripe.com']
     }
 };
 
 export default nextConfig;
+

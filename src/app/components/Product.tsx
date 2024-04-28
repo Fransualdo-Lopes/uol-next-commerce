@@ -13,7 +13,7 @@ export default function Product({ product }: ProductProps) {
             </div>
             <div className='flex justify-betweem font-bold'>
                 <p className='w-40 truncate'>
-                 {product.title}
+                 {product.name}
                 </p>
                 <p className='text-md text-black'>{product.price}</p>
             </div>
