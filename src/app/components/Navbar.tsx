@@ -31,15 +31,9 @@ function Navabar() {
       </ul>
 
       <div className='flex items-center gap-8'>
-        <SignedIn>
-          {/* Mount the UserButton component */}
-          <UserButton />
-        </SignedIn>
-        <SignedOut>
-          {/* Signed out users get sign in button */}
-          <SignInButton />
-        </SignedOut>
-
+        <SignInButton>
+          Fazer Login
+        </SignInButton>
       </div>
     </nav>
   )
