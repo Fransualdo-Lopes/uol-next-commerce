@@ -1,0 +1,165 @@
+<style>
+  .page-container {
+    background-color: var(--secondary-color-1, #457b9d);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 38px 0;
+  }
+
+  @media (max-width: 991px) {
+    .page-container {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  }
+
+  .product-image, .additional-image {
+    aspect-ratio: 0.55;
+    object-fit: cover;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+
+  .content-section {
+    margin-top: 62px;
+  }
+
+  @media (max-width: 991px) {
+    .content-section {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .content-layout {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .content-layout {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .main-column, .secondary-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+  }
+
+  .main-column {
+    width: 56%;
+  }
+
+  .secondary-column {
+    width: 44%;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .main-column, .secondary-column {
+      width: 100%;
+    }
+  }
+
+  .product-description {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+  }
+
+  .season-text, .product-title, .description-text, .price, .add-to-cart-btn {
+    color: var(--light-text-color, #fff);
+    letter-spacing: 0.2px;
+  }
+
+  .season-text {
+    margin-top: 60px;
+    font: 700 20px/150% Hahmlet, sans-serif;
+  }
+
+  .product-title {
+    margin-top: 30px;
+    font: 400 70px/80px Hahmlet, sans-serif;
+  }
+
+  .description-text {
+    margin-top: 30px;
+    font: 400 16px/22px Hahmlet, sans-serif;
+  }
+
+  .price-action-section {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .price {
+    font-family: Hahmlet, sans-serif;
+    line-height: 143%;
+  }
+
+  .add-to-cart-btn {
+    background-color: var(--success-color, #2dc071);
+    padding: 15px 40px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 991px) {
+    .add-to-cart-btn {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+
+  .additional-image {
+    aspect-ratio: 0.74;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .additional-image {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<section class="page-container">
+  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f40b08ddc7fb19546a4c69f2097b95e000679c32c4e05d5473f79e429a843014?apiKey=780453f0c7bf4e6489b81b46562b77d2&" alt="" class="product-image" />
+  <section class="content-section">
+    <div class="content-layout">
+      <article class="main-column">
+        <div class="product-description">
+          <header>
+            <h2 class="season-text">SUMMER 2020</h2>
+            <h1 class="product-title">NEW SEASON CHECKS '21</h1>
+          </header>
+          <p class="description-text">
+            We know how large objects will act, We know how are objects will act, We know
+          </p>
+          <div class="price-action-section">
+            <span class="price">$16.48</span>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+      </article>
+      <aside class="secondary-column">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2c0189354f594a2cc16bf11116a7e56c2ad65910f08dd2deafe9743129c1d3a?apiKey=780453f0c7bf4e6489b81b46562b77d2&" alt="" class="additional-image" />
+      </aside>
+    </div>
+  </section>
+  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f61b1796f14203ef364c96d90d0b89b8600addd6dc4dc7f3958abde06c0e0e6c?apiKey=780453f0c7bf4e6489b81b46562b77d2&" alt="" class="product-image" />
+</section>
