@@ -31,9 +31,20 @@ function Navabar() {
       </ul>
 
       <div className='flex items-center gap-8'>
-        <SignInButton>
-          Fazer Login
-        </SignInButton>
+
+        <SignedOut>
+          <SignInButton mode='modal'>
+            {/* Login do cliente ou cadastro*/}
+            <button className='border rounded-md border-yellow-400 px-3 py-2'>
+              Fazer Login
+            </button>
+          </SignInButton>
+        </SignedOut>
+      {/* Botão do usuario logado*/}
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+
       </div>
     </nav>
   )
