@@ -34,7 +34,7 @@ export default function RootLayout({
         <body className={clsx(inter.className, 'bg-slate-blue 700')}>
           <Navbar />
           <main className='h-screen p-0.6'>
-          <HomeContent />
+            <HomeContent />
             {children}
             <Footer />
           </main>

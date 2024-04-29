@@ -5,14 +5,15 @@ import Link from 'next/link';
 
 const FooterTop = () => {
     return (
-        <div className="flex px-10 bg-yellow-100 py-10 text-gray-800 text-center">
-            <div className="h-30 container mx-auto flex justify-center items-center space-x-4">
+        <div className="flex px-10 bg-orange-100 py-20 text-black text-center">
+            <div className="container mx-auto flex justify-center p-10 gap-10 items-center space-x-4">
                 <img src="/images/home/icon-trophy 1.svg" alt="Trophy Icon" className="h-8 w-8" />
                 <img src="/images/home/icon-check.svg" alt="Check Circle Icon" className="h-8 w-8" />
                 <img src="/images/home/icon-present.svg" alt="Gift Icon" className="h-8 w-8" />
                 <img src="/images/home/icon-support.svg" alt="Headset Icon" className="h-8 w-8" />
             </div>
         </div>
+
     );
 };
 
@@ -55,7 +56,7 @@ const Footer = () => {
                                 <li>Payment Options</li>
                                 <li>Returns</li>
                                 <li>Privacy Policies</li>
-                            </ul>        
+                            </ul>
                         </div>
 
                         {/* Seção 4: Newsletter */}

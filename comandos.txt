@@ -1,0 +1,29 @@
+npx create-next-app@latest
+
+npm rum dev
+
+npm install clsx
+
+npm install @clerk/nextjs
+
+npm list prisma --dev
+
+npm show prisma version
+
+npx prisma init
+
+npx install @prisma/client
+
+npx prisma db push
+
+npx prisma db push
+
+npx prisma generate
+
+npm install svix
+
+npm install @stripe/stripe-js stripe
+--------------------------
+Comando queryes DB:
+select * from user
+

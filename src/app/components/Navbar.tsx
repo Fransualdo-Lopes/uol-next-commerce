@@ -16,12 +16,12 @@ function Navabar() {
         Furniro
       </Link>
       {/* Menu de navegação centralizado */}
-      <ul className="flex items-center justify-center space-x-8 flex-grow">
+      <ul className=" flex items-center justify-center gap-10 space-x-8 flex-grow">
         <li>
           <Link href="/" className="hover:text-gray-800">Home</Link>
         </li>
         <li>
-          <Link href="/shop" className="hover:text-gray-800">Shop</Link>
+          <Link href="/" className="hover:text-gray-800">Shop</Link>
         </li>
         <li>
           <Link href="/about" className="hover:text-gray-800">About</Link>
