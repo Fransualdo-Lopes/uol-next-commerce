@@ -1,97 +1,91 @@
-import Link from "next/link";
+
+
+import React from 'react';
+import Link from 'next/link';
+
+const FooterTop = () => {
+    return (
+        <div className="flex px-10 bg-yellow-100 py-10 text-gray-800 text-center">
+            <div className="h-30 container mx-auto flex justify-center items-center space-x-4">
+                <img src="/images/home/icon-trophy 1.svg" alt="Trophy Icon" className="h-8 w-8" />
+                <img src="/images/home/icon-check.svg" alt="Check Circle Icon" className="h-8 w-8" />
+                <img src="/images/home/icon-present.svg" alt="Gift Icon" className="h-8 w-8" />
+                <img src="/images/home/icon-support.svg" alt="Headset Icon" className="h-8 w-8" />
+            </div>
+        </div>
+    );
+};
 
 const Footer = () => {
-  return (
-    <footer className="bg-gray-800 text-gray-300 py-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Seção 1: Sobre */}
-          <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-2">About Us</h3>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              ultricies justo nec nunc tempor, vitae hendrerit nisi dictum.
-            </p>
-          </div>
+    return (
+        <>
+            <FooterTop />
+            <footer className="bg-white text-black py-8">
+                <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {/* Seção 1: Sobre */}
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">Funiro</h3>
+                            <p className="text-sm">
+                                400 University Drive Suite 200 Coral Gables,
+                                FL 33134 USA
+                            </p>
+                        </div>
 
-          {/* Seção 2: Links */}
-          <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
-            <ul className="text-sm">
-              <li>
-                <Link href="/shop">Shop</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
+                        {/* Seção 2: Links */}
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">Links</h3>
+                            <ul className="text-sm">
+                                <li>
+                                    <Link href="/shop">Shop</Link>
+                                </li>
+                                <li>
+                                    <Link href="/about">About</Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact">Contact</Link>
+                                </li>
+                            </ul>
+                        </div>
 
-          {/* Seção 3: Newsletter */}
-          <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-2">Newsletter</h3>
-            <p className="text-sm">
-              Subscribe to our newsletter for updates and exclusive offers.
-            </p>
-            <form className="mt-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full px-4 py-2 mt-1 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:bg-gray-600"
-              />
-              <button
-                type="submit"
-                className="w-full mt-2 bg-primary text-white py-2 rounded-md hover:bg-opacity-80 transition duration-300"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
+                        {/* Seção 3: Ajuda */}
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">Help</h3>
+                            <ul className="text-sm">
+                                <li>Payment Options</li>
+                                <li>Returns</li>
+                                <li>Privacy Policies</li>
+                            </ul>        
+                        </div>
 
-          {/* Seção 4: Social */}
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
-            <div className="flex space-x-4 text-xl">
-              <a href="#" className="hover:text-primary">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" className="hover:text-primary">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="hover:text-primary">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="hover:text-primary">
-                <i className="fab fa-pinterest"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+                        {/* Seção 4: Newsletter */}
+                        <div className="mb-4">
+                            <h3 className="text-lg font-semibold mb-2">Newsletter</h3>
+                            <form className="mt-2">
+                                <input
+                                    type="email"
+                                    placeholder="Enter Your Email Address"
+                                    className="w-full px-4 py-2 mt-1 rounded-md bg-white text-black focus:outline-none focus:bg-gray-100"
+                                />
+                                <button
+                                    type="submit"
+                                    className="w-full mt-2 bg-primary text-white py-2 rounded-md hover:bg-opacity-80 transition duration-300"
+                                >
+                                    SUBSCRIBE
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
-      {/* Créditos e informações adicionais */}
-      <div className="border-t border-gray-700 mt-8 pt-4 text-left p-5">
-        <p className="text-sm">
-          &copy; 2024 furino. All rights reverved. 
-        </p>
-        <p className="text-xs mt-1">
-          Images by{" "}
-          <Link href="https://www.freepik.com" target="_blank">
-            Freepik
-          </Link>{" "}
-          and{" "}
-          <Link href="https://www.flaticon.com" target="_blank">
-            Flaticon
-          </Link>
-        </p>
-      </div>
-    </footer>
-  );
+                <div className="border-t border-gray-400 mt-8 pt-4 text-left p-5">
+                    <p className="text-sm">
+                        &copy; 2024 Funiro. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </>
+    );
 };
 
 export default Footer;
-
-
