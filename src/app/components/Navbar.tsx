@@ -6,6 +6,7 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/nextjs";
+import HomeContent from "./HomeContent";
 
 function Navabar() {
   return (

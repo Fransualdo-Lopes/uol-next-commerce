@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 import clsx from "clsx";
@@ -12,6 +13,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import Footer from "./components/Footer";
+import Shop from "./components/Shop";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,6 +32,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={clsx(inter.className, 'bg-slate 700')}>
+          
           <Navbar />
           <main className='h-screen p-0'>
           <HomeContent />
@@ -41,3 +44,4 @@ export default function RootLayout({
     </ClerkProvider>
   );
 }
+
