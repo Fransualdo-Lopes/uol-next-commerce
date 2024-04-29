@@ -2,16 +2,37 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Informação Importante: todo usuario de que faz a autenticação por login ou que se cadastra na pagina, automaticamente já é inserido no DB da aplicação.
+
+## Alguns dos cprincipais comandos utilizados:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx create-next-app@latest
+
+npm rum dev
+
+npm install clsx
+
+npm install @clerk/nextjs
+
+npm list prisma --dev
+
+npm show prisma version
+
+npx prisma init
+
+npx install @prisma/client
+
+npx prisma db push
+
+npx prisma generate
+
+npm install svix
+
+npm install @stripe/stripe-js stripe
+--------------------------
+Comando queryes DB:
+select * from user.
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
