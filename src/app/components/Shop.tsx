@@ -1,5 +1,5 @@
 import { ProductType } from "@/types/ProductType";
-import ProductImage from '../components/ProductImage'; // Corrija o caminho conforme necessário
+import ProductImage from '../components/ProductImage'; 
 
 type ProductProps = {
     product: ProductType;

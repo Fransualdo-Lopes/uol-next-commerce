@@ -37,7 +37,7 @@ function Navabar() {
           <SignInButton mode='modal'>
             {/* Login do cliente ou cadastro*/}
             <button className='border rounded-md border-yellow-400 px-3 py-2'>
-              Fazer Login
+              <img src="/images/home/icon-person.svg" alt="fazer login" />
             </button>
           </SignInButton>
         </SignedOut>
