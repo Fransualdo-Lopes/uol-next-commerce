@@ -31,14 +31,13 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={clsx(inter.className, 'bg-slate 700')}>
-          
+        <body className={clsx(inter.className, 'bg-slate-blue 700')}>
           <Navbar />
-          <main className='h-screen p-0'>
+          <main className='h-screen p-0.6'>
           <HomeContent />
             {children}
+            <Footer />
           </main>
-          {/* <Footer /> */}
         </body>
       </html>
     </ClerkProvider>

@@ -21,7 +21,7 @@ function HomeContent() {
             <img
               src="/images/home/dining.svg"
               alt="Dining Collection"
-              className="w-full h-78 object-contain mb-4"
+              className="w-full h-73 object-contain mb-4"
             />
             <h3 className="h-10 text-lg font-semibold mb-2">Dining</h3>
           </div>
@@ -31,7 +31,7 @@ function HomeContent() {
             <img
               src="/images/home/living.svg"
               alt="Living Collection"
-              className="w-full h-78 object-contain mb-4"
+              className="w-full h-73 object-contain mb-4"
             />
             <h3 className=" h-10 text-lg font-semibold mb-2">Living</h3>
           </div>
@@ -41,7 +41,7 @@ function HomeContent() {
             <img
               src="/images/home/bedroom.svg"
               alt="Bedroom Collection"
-              className="w-full h-78 object-contain mb-4"
+              className="w-full h-73 object-contain mb-4"
             />
             <h3 className="h-10 text-lg font-semibold mb-2">Bedroom</h3>
           </div>
