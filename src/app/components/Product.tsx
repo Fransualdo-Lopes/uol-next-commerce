@@ -1,23 +1,35 @@
 import { ProductType } from "@/types/ProductType";
 import ProductImage from './ProductImage';
 
+type ProductProps = {
+    product: ProductType;
+};
 
-type PruductProps = {
-    product: ProductType
-}
-export default function Product({ product }: ProductProps) {
+const Product: React.FC<ProductProps> = ({ product }) => {
     return (
-        <div className='flex flex-col shadow-lg h-96 bg-slate 100 p-5 text-gray-300'>
-            <div className='relative max-h-72 flex-1'>
-                <ProductImage product={product} fill />
+            <div className='flex flex-col shadow-lg h-96 p-0.5 text-black'>
+                <div className='relative max-h-73 flex-1'>
+                    <ProductImage product={product} fill />
+                </div>
+                <div className=' justify-between font-bold mt-4 p-5'>
+                    <h5 className='flex mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{product.name}</h5>
+                    <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>{product.description}</p>
+                <div className="flex space-x-2 md:space-x-8 ">
+                    <h5 className='text-md'>R$ {product.price}</h5>
+                    <p className='flex mb-3 font-normal text-gray-700 dark:text-gray-400 line-through'>R$ 9800,00</p>
+                </div>
+                    
+
+                </div>
             </div>
-            <div className='flex justify-betweem font-bold'>
-                <p className='w-40 truncate'>
-                 {product.name}
-                </p>
-                <p className='text-md text-black'>{product.price}</p>
-            </div>
-            <button className='rounded-md bg-teal-600 text-white px-3.5 py-2.5 text-sm text-center'>Adicionar ao Carrinho</button>
-        </div>
-    )
-}
+    );
+};
+
+export default Product;
+
+
+
+
+
+
+
