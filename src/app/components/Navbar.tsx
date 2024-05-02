@@ -6,7 +6,6 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/nextjs";
-import HomeContent from "./HomeContent";
 
 function Navabar() {
   return (
@@ -21,7 +20,7 @@ function Navabar() {
           <Link href="/" className="hover:text-gray-800">Home</Link>
         </li>
         <li>
-          <Link href="/" className="hover:text-gray-800">Shop</Link>
+          <Link href="/shop" className="hover:text-gray-800">Shop</Link>
         </li>
         <li>
           <Link href="/about" className="hover:text-gray-800">About</Link>

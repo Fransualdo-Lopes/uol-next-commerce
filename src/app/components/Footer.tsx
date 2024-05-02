@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 
+
 const FooterTop = () => {
     return (
         <div className="flex px-10 bg-orange-100 py-20 text-black text-center">

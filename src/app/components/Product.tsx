@@ -1,5 +1,6 @@
 import { ProductType } from "@/types/ProductType";
 import ProductImage from './ProductImage';
+import { formatPrice } from '@/lib/utils';
 
 type ProductProps = {
     product: ProductType;
@@ -15,7 +16,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
             <h5 className='flex mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{product.name}</h5>
             <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>{product.description}</p>
             <div className="flex space-x-2 md:space-x-8">
-                <h5 className='text-md'>R$ {product.price}</h5>
+                <h5 className='text-md'>{formatPrice(product.price)}</h5>
                 <p className='flex mb-3 font-normal text-gray-700 dark:text-gray-400 line-through'>R$ 9800,00</p>
             </div>
         </div>

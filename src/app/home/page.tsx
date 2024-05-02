@@ -1,7 +1,4 @@
-import Link from "next/link";
-import Product from "./Product";
-
-function HomeContent() {
+export default function Home() {
     return (
         <>
             <div className="w-full relative bg-gray-900 text-white">
@@ -58,10 +55,10 @@ function HomeContent() {
 
                 <h2 className="font-bold mt-12">Our Products</h2>
                 
-            </div>
-            
+            </div> 
+            <div>esta é a tela home de teste</div>
         </>
     );
 }
 
-export default HomeContent;
+// aqui no return eu posso retornar uma tela criada esta é a tela /home, mesmo nome da pasta

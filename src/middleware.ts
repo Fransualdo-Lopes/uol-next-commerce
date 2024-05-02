@@ -1,7 +1,7 @@
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
 export default clerkMiddleware({
-  publicRoutes: ['/'],
+  publicRoutes: ['/', '/home(.*)','/shop(.*)', '/about(.*)', '/contact(.*)'],
 });
 
 export const config = {
