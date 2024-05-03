@@ -30,11 +30,10 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={clsx(inter.className, 'bg-slate-blue 700')}>
-          {/* <Navbar /> */}
+          <Navbar />
           <main className='h-screen p-0.6'>
-            {/* <HomeContent /> */}
             {children}
-            {/* <Footer /> */}
+            <Footer /> 
           </main>
         </body>
       </html>

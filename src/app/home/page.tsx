@@ -1,3 +1,6 @@
+import Product from "../components/Product"
+import Shop from "../shop/page";
+
 export default function Home() {
     return (
         <>
@@ -14,8 +17,7 @@ export default function Home() {
                         scelerisque.
                     </p>
                 </div>
-
-                <div className="absolute inset-0 bg-black opacity-40"></div>
+            
             </div>
             <div className="h-12"></div>
             <div className="container mx-auto text-3xl p-5 text-black text-center">
@@ -56,6 +58,7 @@ export default function Home() {
                 <h2 className="font-bold mt-12">Our Products</h2>
                 
             </div> 
+           
             <div>esta é a tela home de teste</div>
         </>
     );
