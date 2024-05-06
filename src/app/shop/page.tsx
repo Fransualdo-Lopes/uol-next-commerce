@@ -32,7 +32,6 @@ export default async function Shop() {
     const products = await getProducts();
 
     return (
-        
         <>
             {/* banner tela shop */}
             <nav>
