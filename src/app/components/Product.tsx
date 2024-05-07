@@ -1,7 +1,7 @@
 import { ProductType } from "@/types/ProductType";
 import ProductImage from './ProductImage';
 import { formatPrice } from '@/lib/utils';
-import { FaEye, FaShare, FaBalanceScale, FaHeart } from 'react-icons/fa';
+// import { FaEye, FaShare, FaBalanceScale, FaHeart } from 'react-icons/fa';
 
 type ProductProps = {
     product: ProductType;

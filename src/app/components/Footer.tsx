@@ -49,58 +49,56 @@ const Footer = () => {
     return (
         <>
             <FooterTop />
-            <footer className="bg-white text-black py-8 border-t-2 border-gray-300">
-                <div className="container mx-auto px-4 md:px-8 max-w-4xl flex flex-wrap justify-center sm:justify-between">
-            
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {/* Coluna 1: Funiro */}
-                        <div>
-                            <h2 className="text-lg font-semibold mb-4">Funiro</h2>
-                            <p className="text-gray-600">400 University Drive Suite 200</p>
-                            <p className="text-gray-600">Coral Gables, FL 33134, USA</p>
-                            <p className="text-gray-600">Phone: (123) 456-7890</p>
+            <footer className="bg-white py-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                        {/* Endereço */}
+                        <div className="col-span-1">
+                            <h1 className="text-black sm:font-medium mb-4">Funiro.</h1>
+                            <p className="text-gray-500">
+                                400 University Drive Suite 200
+                                <br />
+                                Coral Gables, FL 33134, USA
+                            </p>
+                            <p className="text-gray-500 mt-2">Phone: (123) 456-7890</p>
                         </div>
 
-                        {/* Coluna 2: Links */}
-                        <div>
-                            <h2 className="text-lg font-semibold mb-4">Links</h2>
-                            <ul className="list-none">
-                                <li><a href="#" className="text-gray-600">Home</a></li>
-                                <li><a href="#" className="text-gray-600">Shop</a></li>
-                                <li><a href="#" className="text-gray-600">Returns</a></li>
-                                <li><a href="#" className="text-gray-600">About</a></li>
-                                <li><a href="#" className="text-gray-600">Privacy Policies</a></li>
-                                <li><a href="#" className="text-gray-600">Contact</a></li>
+                        {/* Links */}
+                        <div className="col-span-1">
+                            <h3 className="text-gray-600 font-medium mb-4">Links</h3>
+                            <ul className="text-gray-500">
+                                <li><a href="#" className="hover:text-gray-800">Home</a></li>
+                                <li><a href="#" className="hover:text-gray-800">Shop</a></li>
+                                <li><a href="#" className="hover:text-gray-800">Returns</a></li>
+                                <li><a href="#" className="hover:text-gray-800">About</a></li>
+                                <li><a href="#" className="hover:text-gray-800">Privacy Policies</a></li>
+                                <li><a href="#" className="hover:text-gray-800">Contact</a></li>
+                                <li><a href="#" className="hover:text-gray-800">Help</a></li>
                             </ul>
                         </div>
 
-                        {/* Coluna 3: Help */}
-                        <div>
-                            <h2 className="text-lg font-semibold mb-4">Help</h2>
-                            <p className="text-gray-600">Payment Options</p>
-                        </div>
-
-                        {/* Coluna 4: Newsletter */}
-                        <div>
-                            <h2 className="text-lg font-semibold mb-4">Newsletter</h2>
-                            <p className="text-gray-600 mb-2">Enter Your Email Address</p>
-                            <div className="flex border-b border-gray-300">
+                        {/* Newsletter */}
+                        <div className="col-span-1">
+                            <h3 className="text-gray-600 font-medium mb-4">Newsletter</h3>
+                            <p className="text-gray-500 mb-4">Enter Your Email Address</p>
+                            <div className="flex items-center">
                                 <input
                                     type="email"
                                     placeholder="Your Email"
-                                    className="py-2 px-3 rounded-l-md focus:outline-none focus:ring focus:border-blue-300 flex-grow border-none"
+                                    className="py-2 px-3 w-full rounded-l-md focus:outline-none"
                                 />
-                                <button className="text-black py-2 px-4 rounded-r-md focus:outline-none focus:ring focus:border-blue-300 bg-transparent hover:bg-gray-200">
+                                <button className="bg-white text-gray-500 px-4 rounded-r-md hover:bg-gray-800 focus:outline-none">
                                     SUBSCRIBE
                                 </button>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Direitos Autorais */}
-                    <div className="mt-8 text-center text-sm text-gray-600">
-                        <hr className="border-t-2 border-gray-300 mb-4" />
-                        <p>&copy; 2023 Funiro. All rights reserved.</p>
+                        {/* Texto de Direitos Autorais */}
+                        <div className="col-span-4 mt-8 border-t border-gray-300 pt-6 text-center text-sm text-gray-600">
+                            <p>&copy; 2023 Funiro. All rights reserved.</p>
+                        </div>
+
                     </div>
                 </div>
             </footer>
