@@ -23,6 +23,8 @@ npx prisma generate
 npm install svix
 
 npm install @stripe/stripe-js stripe
+
+npm install zustand
 --------------------------
 Comando queryes DB:
 select * from user
