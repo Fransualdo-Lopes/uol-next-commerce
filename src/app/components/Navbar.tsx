@@ -43,10 +43,13 @@ function Navabar() {
       </div>
 
       <div className='flex items-center gap-3'>
+
+     
+
         <SignedOut>
           <SignInButton mode='modal'>
             {/* Login ou cadastro do cliente */}
-            <button className='rounded-md px-3 py-2 h-12 w-12'>
+            <button className='rounded-md px-2 py-2 h-12 w-12'>
               <img src="/images/home/icon-person.svg" alt="fazer login" />
             </button>
           </SignInButton>
@@ -56,6 +59,8 @@ function Navabar() {
           <UserButton />
         </SignedIn>
 
+        <img src="/images/home/icon-lupa.svg" alt="lupa de pesquisa" className="cursor-pointer w-4 h-4"/>
+        <img src="/images/home/icon-heart.svg" alt="icone de um corfacao" className="cursor-pointer w-4 h-4"/>
         {/* icone do carrinho */}
         <Cart />
       </div>

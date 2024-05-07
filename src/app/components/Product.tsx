@@ -27,10 +27,3 @@ const Product: React.FC<ProductProps> = ({ product }) => {
 };
 
 export default Product;
-
-
-
-
-
-
-
