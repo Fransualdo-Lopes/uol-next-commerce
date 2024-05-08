@@ -15,7 +15,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
                 <ProductImage product={product} fill />
                 {/* Overlay para mostrar botão no hover */}
                 <div className="absolute inset-0 bg-black/25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button className="bg-white text-black py-2 px-5">See Details</button>
+                    <button className="bg-white text-yellow-500 py-2 px-5">See Details</button>
                 </div>
             </div>
             <div className="bg-gray-200 justify-between font-bold p-5">
