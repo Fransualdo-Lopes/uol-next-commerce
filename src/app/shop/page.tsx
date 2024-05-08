@@ -9,7 +9,7 @@ async function getProducts(): Promise<ProductType[]> {
         apiVersion: '2024-04-10',
     });
 
-    const products = await stripe.products.list();
+    const products = await stripe.products.list({ limit: 100 });
     const formatedProducts = await Promise.all(
         products.data.map(async (product) => {
             const price = await stripe.prices.list({
