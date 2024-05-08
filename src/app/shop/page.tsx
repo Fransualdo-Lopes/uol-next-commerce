@@ -56,7 +56,7 @@ export default async function Shop() {
                         <Product key={product.id} product={product}></Product>
                     ))}
                 </div>
-                <div>tela shop completa</div>
+                
             </div>
         </>
     );

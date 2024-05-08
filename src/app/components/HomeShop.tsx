@@ -8,7 +8,7 @@ async function getProducts(): Promise<ProductType[]> {
         apiVersion: '2024-04-10',
     });
 
-    const products = await stripe.products.list();
+    const products = await stripe.products.list({ limit: 8 });
     const formatedProducts = await Promise.all(
         products.data.map(async (product) => {
             const price = await stripe.prices.list({
@@ -41,9 +41,8 @@ export default async function Shop() {
                         <Product key={product.id} product={product}></Product>
                     ))}
                 </div>
-                <div>tela shop completa</div>
+                
             </div>
         </>
     );
 }
-// aqui no return eu posso retornar uma tela criada esta é a tela /shop, mesmo nome da pasta

@@ -9,14 +9,15 @@ type ProductProps = {
 
 const Product: React.FC<ProductProps> = ({ product }) => {
     return (
-        <div className="flex flex-col shadow-lg h-96 p-0.5 text-black group hover:bg-transparent hover:relative transition duration-300 ease-in-out">
+        <div className="relative group flex flex-col shadow-lg h-96 p-0 text-black transition duration-300 ease-in-out hover:bg-transparent hover:relative">
+            <div className="absolute inset-0 bg-black/25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative max-h-73 flex-1">
                 <ProductImage product={product} fill />
-                <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button className="bg-white text-black py-2 px-5">See More</button>
+                {/* Overlay para mostrar botão no hover */}
+                <div className="absolute inset-0 bg-black/25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button className="bg-white text-black py-2 px-5">See Details</button>
                 </div>
             </div>
-
             <div className="bg-gray-200 justify-between font-bold p-5">
                 <h5 className="flex mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{product.name}</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{product.description}</p>
@@ -26,6 +27,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
                 </div>
             </div>
         </div>
+
     );
 };
 
