@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Filter = () => {
     return (
         <>
-        <div>meu filter</div>
+        <div>meu filte, criar filter </div>
         </>
 
     );

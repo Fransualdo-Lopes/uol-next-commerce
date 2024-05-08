@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+.product-container:hover {
+   
+    background-color: rgb(4, 14, 18);
+    cursor: pointer;
+  }
