@@ -1,5 +1,4 @@
 // components/ProductDetails.tsx
-
 import React from 'react';
 import { useRouter } from 'next/router';
 import { ProductType } from '@/types/ProductType'; // Importe o tipo ProductType

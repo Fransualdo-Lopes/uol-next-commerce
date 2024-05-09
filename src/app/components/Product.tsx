@@ -9,6 +9,7 @@ type ProductProps = {
     product: ProductType;
 };
 
+
 const Product: React.FC<ProductProps> = ({ product }) => {
     const handleShareClick = () => {
         console.log('Compartilhar', product.name);
@@ -31,16 +32,16 @@ const Product: React.FC<ProductProps> = ({ product }) => {
                 <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 
                     <div className="flex-none flex-col items-center justify-center text-center">
-                        <button className="bg-white text-yellow-600 py-2 px-5 transform motion-safe:hover:scale-110" 
+                        <button className="bg-white text-yellow-600 py-2 px-5 transform motion-safe:hover:scale-110"
                         >See Details</button>
-                       
+
                         <div className="flex space-x-4 mt-2 text-white">
                             {/* Ícone de compartilhar */}
                             <div className="flex items-center cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
                                 <img
                                     src="/images/shop/icon-share.svg"
                                     alt="Share Icon"
-                                    className="cursor-pointer w-6 h-6"
+                                    className="cursor-pointer w-4 h-4"
                                     onClick={handleShareClick}
                                 />
                                 <span className="ml-1 text-sm font-bold font-sans">Share</span>
@@ -50,7 +51,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
                                 <img
                                     src="/images/shop/icon-compare.svg"
                                     alt="Compare Icon"
-                                    className="cursor-pointer w-6 h-6"
+                                    className="cursor-pointer w-4 h-4"
                                     onClick={handleCompareClick}
                                 />
                                 <span className="ml-1 text-sm font-bold font-sans">Compare</span>
@@ -60,7 +61,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
                                 <img
                                     src="/images/shop/icon-like.svg"
                                     alt="Like Icon"
-                                    className="w-6 h-6"
+                                    className="w-4 h-4"
                                     onClick={handleLikeClick}
                                 />
                                 <span className="ml-1 text-sm font-bold font-sans">Like</span>
