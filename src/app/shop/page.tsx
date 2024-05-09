@@ -42,7 +42,7 @@ export default async function Shop() {
                     <div className="mt-4">
                         <Link href="/" className="text-black text-lg mr-4">Home</Link>
                         <span className="text-black text-lg">{'>'}</span>
-                        <Link href="/shop"className="text-black text-lg ml-4">Shop</Link>
+                        <Link href="/shop" className="text-black text-lg ml-4">Shop</Link>
                     </div>
                 </div>
             </section>
@@ -56,7 +56,7 @@ export default async function Shop() {
                         <Product key={product.id} product={product}></Product>
                     ))}
                 </div>
-                
+
             </div>
         </>
     );
