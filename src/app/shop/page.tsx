@@ -61,4 +61,3 @@ export default async function Shop() {
         </>
     );
 }
-// aqui no return eu posso retornar uma tela criada esta é a tela /shop, mesmo nome da pasta
