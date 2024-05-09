@@ -2,6 +2,7 @@
 import { ProductType } from "@/types/ProductType";
 import Product from "../components/Product";
 import { Stripe } from 'stripe';
+import Link from 'next/link'
 
 async function getProducts(): Promise<ProductType[]> {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -40,8 +41,17 @@ export default async function Shop() {
                     {products.map((product) => (
                         <Product key={product.id} product={product}></Product>
                     ))}
+
                 </div>
-                
+            </div>
+            <div className="left-0 right-0 text-center mb-10">
+                <Link href="/shop">
+                    <button className="bg-white text-yellow-600 py-3 px-6 rounded-lg border-2 border-yellow-600 
+                    shadow-md hover:bg-yellow-600 hover:text-white hover:shadow-lg transform hover:scale-105 
+                    transition duration-300 ease-in-out min-w-[150px]">
+                        Show More
+                    </button>
+                </Link>
             </div>
         </>
     );
