@@ -6,7 +6,7 @@ const FooterTop = () => {
         <div className="bg-orange-100 py-8 text-black text-center sm:text-left">
             <div className="container mx-auto flex flex-wrap justify-center sm:justify-between p-4 sm:p-10 gap-4 sm:gap-10">
                 {/* Ícone de Troféu */}
-                <div className="footer-icon flex items-center">
+                <div className="footer-icon flex items-center transition-transform hover:scale-110 cursor-pointer">
                     <img src="/images/home/icon-trophy 1.svg" alt="Trophy Icon" className="mr-2 h-12 w-12 sm:h-14 sm:w-14" />
                     <div>
                         <p className="text-gray-900 font-semibold">High Quality</p>
@@ -15,7 +15,7 @@ const FooterTop = () => {
                 </div>
 
                 {/* Ícone de Check Circle */}
-                <div className="footer-icon flex items-center">
+                <div className="footer-icon flex items-center transition-transform hover:scale-110 cursor-pointer">
                     <img src="/images/home/icon-check.svg" alt="Check Circle Icon" className="mr-2 h-12 w-12 sm:h-14 sm:w-14" />
                     <div>
                         <p className="text-gray-900 font-semibold">Certified Products</p>
@@ -24,7 +24,7 @@ const FooterTop = () => {
                 </div>
 
                 {/* Ícone de Presente */}
-                <div className="footer-icon flex items-center">
+                <div className="footer-icon flex items-center transition-transform hover:scale-110 cursor-pointer">
                     <img src="/images/home/icon-present.svg" alt="Gift Icon" className="mr-2 h-12 w-12 sm:h-14 sm:w-14" />
                     <div>
                         <p className="text-gray-900 font-semibold">Gift Ideas</p>
@@ -33,7 +33,7 @@ const FooterTop = () => {
                 </div>
 
                 {/* Ícone de Suporte */}
-                <div className="footer-icon flex items-center">
+                <div className="footer-icon flex items-center transition-transform hover:scale-110 cursor-pointer">
                     <img src="/images/home/icon-support.svg" alt="Headset Icon" className="mr-2 h-12 w-12 sm:h-14 sm:w-14" />
                     <div>
                         <p className="text-gray-900 font-semibold">Customer Support</p>
