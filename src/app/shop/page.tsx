@@ -47,6 +47,9 @@ export default async function Shop() {
                 </div>
             </section>
 
+            <div>
+                <img src="/images/shop/Rectangle20.svg" alt="Retangle Filter" />
+            </div>    
             <div></div>
             {/* // cards de produtos- tela inicial  */}
             <div className='max-w-7xl mx-auto pt-8 p-8 xl-px0'>
